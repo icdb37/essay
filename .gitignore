@@ -1,0 +1,57 @@
+.githooks/hooks.log
+.hugo_build.lock
+exampleSite/public*
+hugo*.exe
+*.xcf
+*.zip
+tmp/
+
+# Vim
+*.[sw]p
+*.un~
+*.swo
+*.swp
+Session.vim
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Visual Studio Code
+.vscode/
+
+# IntelliJ IDEA / JetBrains
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.csettings/
+
+# NetBeans
+nbproject/
+
+# Xcode
+*.xcuserstate
+*.xcworkspace/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# MacOS Finder
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows thumbnail cache
+Thumbs.db
+ehthumbs.db
+
+# Temporary files
+*~
+*.bak
+*.tmp
+*.swp

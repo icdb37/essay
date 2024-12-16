@@ -1,0 +1,8 @@
+baseURL = 'http://icdb37.cn'
+theme = 'hugo-theme-relearn'
+languageCode = "zh-CN"
+language = "zh"
+defaultContentLanguage = "zh"
+title = "随记"
+author = "ydbt"
+defaultContentLanguageInSubdir= true

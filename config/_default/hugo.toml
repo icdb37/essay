@@ -1,18 +1,70 @@
-baseURL = 'http://icdb37.cn'
+baseURL = 'http://icdb37.cn/'
+relativeURLs = false
 theme = 'hugo-theme-relearn'
 languageCode = "zh-CN"
 language = "zh"
 defaultContentLanguage = "zh"
 title = "随记"
-author = "ydbt"
+author = "Liang"
 
 [params]
+  # 编辑用户和日期
+  enableGitInfo = true
+  # 导航菜单项排序
+  #ordersectionsby = 'linkTitle'
+  # 菜单导航是否展开所有
+  alwaysopen=false
+  # 菜单导航中的折叠按钮
+  collapsibleMenu = true
+  # logo图标
+  logo = "/images/logo-100.png"
+  # icon图标【无效】
+  favicon = "/images/favicon.png"
+  # 标题分隔，默认为'::'
+  titleSeparator = '|'
+  # 不展示Home按钮
+  disableLandingPageButton = false
+  # Home图标和名称
+  landingPageName = '<i class="fa-fw fas fa-home"></i> Home'
+  # 已读网页标记
+  showVisitedLinks = true
+  # 排序方式
+  ordersectionsby = 'weight'
+  # 数据页搜索
+  disableSearch = false
+  # 索引页搜索
+  disableSearchIndex = false
+  # 扩展搜索语言
+  additionalContentLanguage = ['en']
+  #disableAssetsBusting = false
+  #disableRandomIds = false
   # 设置默认语言
   defaultLanguage = "zh"
   # 禁止语言路径
   disableLanguages = true
+  ## 页内配置
+  # 页内导航父子路径分隔符
+  breadcrumbSeparator = '/'
+  # 移除根导航
+  disableRootBreadcrumb = true
+  # 
+  #disableTermBreadcrumbs = true
+  # 页内标题链接拷贝图标，默认为false
+  #disableAnchorCopy = true
+  # 跳转锚点方式，启用平滑滚动
+  disableAnchorScrolling = true
+  # 隐藏页
+  disableSearchHiddenPages = true
+  disableSeoHiddenPages = true
+  disableTagHiddenPages = true
+  images = ['images/favicon.png']
   # 主题颜色
-  themeVariant = ['auto', 'relearn-light', 'relearn-dark']
+  themeVariant = [
+    { identifier = 'auto',  name = '默认'},
+    { identifier = 'relearn-light',  name = '浅色'},
+    { identifier = 'relearn-dark',  name = '深色' }
+  ]
+  #themeVariant = ['auto', 'relearn-light', 'relearn-dark']
   [params.author]
     email = 'icdb37@163.com'
     name = 'Liang'
@@ -25,15 +77,20 @@ author = "ydbt"
   [mediaTypes.'text/javascript']
     suffixes = ['js']
 
-[outputFormats]
-  [outputFormats.print]
-    name= 'print'
-    baseName = 'index.print'
-    isHTML = true
-    mediaType = 'text/html'
-    permalinkable = false
-    noUgly = true
-
+# 输出打印
+[outputs]
+  home = ['html', 'rss']
+  page = ['html', 'rss', 'print']
+  section = ['html', 'rss']
+  # 输出打印样式
+  [outputFormats]
+    [outputFormats.print]
+      name= 'print'
+      baseName = 'index.print'
+      isHTML = true
+      mediaType = 'text/html'
+      permalinkable = false
+      noUgly = true
   # unused since 7.0.0 but left in here to generate warnings
   [outputFormats.search]
     name= 'search'
@@ -42,7 +99,6 @@ author = "ydbt"
     mediaType = 'text/html'
     permalinkable = false
     noUgly = true
-
   # unused since 7.0.0 but left in here to generate warnings
   [outputFormats.searchpage]
     name= 'searchpage'

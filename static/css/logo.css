@@ -1,0 +1,16 @@
+.logo {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logo img {
+    height: 5px;
+    width: 10px;
+  }
+  
+  .logo span {
+    font-size: 3em;
+    color: black;
+    font-weight: bold;
+  }

@@ -2,9 +2,11 @@
 date = '2024-12-17T15:38:51+08:00'
 draft = true
 title = '概述'
+tags = ['hugo', '网站']
+categories = ['工具']
+weight = 911
 +++
 
-# 
 
 ## 参考文档
 * [hugo仓库](https://github.com/gohugoio/hugo)
@@ -31,7 +33,9 @@ title = '概述'
     * git方式
         * `git init`
         * `git submodule add --depth 1 https://github.com/McShelby/hugo-theme-relearn.git themes/hugo-theme-relearn`
-
+4. 主页
+    * `hugo new -k home _index.md` 将创建`content/_index.md`文件
+    * `hugo new posts/code/go/_index.md` 创建`go`章节索引文件
 
 ## 常用命令
 
@@ -54,3 +58,9 @@ title = '概述'
 * `--create`：如果指定的章节不存在，则自动创建该章节；
 * `--force`：强制创建文件，即使目标文件已经存在；
 * `--editor`：在创建新文件后立即打开指定的编辑器；例如：`hugo new --editor code posts/xxx.md`
+
+
+## 其它
+### 插件
+#### `Front Matter CMS`
+

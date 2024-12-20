@@ -1,0 +1,3 @@
+site:
+  type: hugo
+content_dir: content

@@ -6,6 +6,13 @@ language = "zh"
 defaultContentLanguage = "zh"
 title = "随记"
 author = "Liang"
+[mstate]
+  mood = ['平常心']
+  weather = '晴天'
+  temperature = ''
+  festival = ''
+  poetryMe = ['']
+  poetryHe = ['']
 
 [params]
   # 编辑用户和日期

@@ -1,9 +1,10 @@
 +++
 date = '2024-12-17T20:10:00+08:00'
-draft = true
+draft = false
 title = '配置'
-tags = ['hugo', '网站']
-categories = ['工具']
+menuPre = "<i class='fa-fw fas fa-gears'></i> "
+tags = ["hugo"]
+categories = ["工具"]
 weight = 912
 +++
 
@@ -127,6 +128,12 @@ weight = 912
 * `slug`：自定义文章的 URL 路径部分，例如：`slug: "demo"`
 * `url`：自定义文章的完整 URL，例如：`url: "/posts/demo"`
 * `hidden`：隐藏页，导航菜单不展示
+* `[_build]：构建方式
+    不渲染当前页
+    ```
+    [_build]
+    render = "never"`
+    ```
 
 ### 模板和布局
 * `layout`：文章使用的布局模板
@@ -145,3 +152,7 @@ weight = 912
 * `image`：文章的封面图片路径
 * `readingTime`：预计阅读时间
 
+
+### 其它字段
+* `disableInlineCopyToClipBoard`：行内代码复制按钮，默认为`true`
+* `disableHoverBlockCopyToClipBoard`：代码块复制按钮，默认为`true`

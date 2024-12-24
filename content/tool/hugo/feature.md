@@ -1,12 +1,13 @@
 +++
 date = '2024-12-17T21:17:37+08:00'
-draft = true
+draft = false
 title = '功能'
+menuPre = "<i class='fa-solid fa-layer-group'></i> "
 weight = 914
 author = 'Liang'
 location = '北京, 海淀'
-tags = ['hugo', '网站']
-categories = ['工具']
+tags = ["hugo"]
+categories = ["工具"]
 +++
 
 ## 功能

@@ -24,7 +24,7 @@ author = "Liang"
   # 菜单导航中的折叠按钮
   collapsibleMenu = true
   # logo图标
-  logo = "/images/logo-100.png"
+  logo = "/images/logo.png"
   # icon图标【无效】
   favicon = "/images/favicon.png"
   # 标题分隔，默认为'::'
@@ -49,6 +49,8 @@ author = "Liang"
   defaultLanguage = "zh"
   # 禁止语言路径
   disableLanguages = true
+  # 代码块
+  disableInlineCopyToClipBoard = true
   ## 页内配置
   # 页内导航父子路径分隔符
   breadcrumbSeparator = '/'
@@ -122,3 +124,47 @@ author = "Liang"
     name = 'Mermaid'
   [params.relearn.dependencies.openapi]
     name = 'OpenApi'
+
+# markdown渲染latex语法
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)'], ['$', '$']]
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  frontmatter = 'frontmatter'
+  option = 'options'
+
+[languages]
+  [languages.zh]
+    title = '格微录'
+    weight = 1
+    languageCode = 'zh'
+    languageName = '中文'
+    [languages.zh.params]
+      landingPageName = '<i class="fa-fw fas fa-home"></i> 主页'
+
+  [[languages.zh.menu.shortcuts]]
+    pre = "<i class='fa-fw fab fa-github'></i> "
+    name = '仓库'
+    url = 'https://github.com/icdb37/essay'
+    weight = 10
+
+  [[languages.zh.menu.shortcuts]]
+    pre = "<i class='fa-fw fas fa-tags'></i> "
+    name = '标签'
+    pageRef = '/tags'
+    weight = 20
+
+  [[languages.zh.menu.shortcuts]]
+    pre = "<i class='fa-fw fas fa-layer-group'></i> "
+    name = '分类'
+    pageRef = '/categories'
+    weight = 30

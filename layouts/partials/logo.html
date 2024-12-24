@@ -1,7 +1,30 @@
-<a href="{{ .Site.BaseURL }}" class="logo">
+<style>
+  .icdb-logo-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+  }
+  .icdb-logo-container-img {
+    width: 60px;
+    height: 100px;
+  }
+  .icdb-logo-container-txt {
+    margin-left: 10px;
+    font-size: 2.4em;
+    font-weight: bold;
+    text-align: center;
+  }
+</style>
+
+<div class="icdb-logo-container">
+  <a class="icdb-logo-container-img " href="{{ .Site.BaseURL }}">
     {{ if .Site.Params.logo }}
       <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}"/>
     {{ else }}
       <span>{{ .Site.Title }}</span>
     {{ end }}
   </a>
+  <div class="icdb-logo-container-txt">
+    格微录
+  </div>
+</div>

@@ -1,12 +1,13 @@
 +++
 date = '2024-12-20T12:00:00+08:00'
-draft = true
+draft = false
 title = 'Markdown'
 weight = 918
 author = 'Liang'
 location = '北京, 海淀'
-tags = ['网站']
-categories = ['工具']
+tags = ["hugo"]
+categories = ["工具"]
+menuPre = "<i class='fa-fw fab fa-markdown'></i> "
 +++
 
 ## 工具
@@ -47,6 +48,7 @@ categories = ['工具']
 * **代码块**：
     * 行内代码使用：`` ` ``
     * 代码块使用：`` ``` ``
+    * \`转义时使用连续两个 \`\`
 * **表格**：
     |姓名|年龄|备注|
     |-:|:-:|:-|

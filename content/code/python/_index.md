@@ -1,8 +1,8 @@
 +++
-date = '{{ .Date }}'
+date = '2025-01-01T18:49:38+08:00'
 draft = true
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-weight = 9
+title = 'Python'
+weight = 18
 author = 'Liang'
 location = '北京'
 tags = [""]

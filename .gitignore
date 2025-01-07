@@ -57,3 +57,5 @@ ehthumbs.db
 *.swp
 
 public/
+
+.ipynb_checkpoints/

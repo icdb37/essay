@@ -1,8 +1,8 @@
 +++
-date = '{{ .Date }}'
+date = '2024-12-30T12:50:52+08:00'
 draft = true
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-weight = 9
+title = 'Windows'
+weight = 99
 author = 'Liang'
 location = '北京'
 tags = [""]
@@ -12,3 +12,5 @@ LastModifierEmail = 'icdb37@163.com'
 menuPre = ''
 headingPre = ''
 +++
+
+windows工具

@@ -8,7 +8,7 @@ location = '北京, 昌平'
 tags = ["hugo"]
 categories = ["工具"]
 LastModifierDisplayName = 'Liang'
-LastModifierEmail = 'icdb37.163.com'
+LastModifierEmail = 'icdb37@163.com'
 menuPre = "<i class='fa-solid fa-code'></i> "
 headingPre = ''
 [mstate]

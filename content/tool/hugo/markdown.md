@@ -24,6 +24,10 @@ menuPre = "<i class='fa-fw fab fa-markdown'></i> "
 ### 基本用法
 * **段落**：第一个字符不是特殊字符的字符串被视为段落，不同段落之间使用空白行进行分隔；
 * **标题**：依`#`开头的文本按标题处理；n个`#`表示n级标题；
+    * `<h1></h1>` <-> `#`
+    * `<h2></h2>` <-> `##`
+    * `<h3></h3>` <-> `###`
+    * `<h4></h4>` <-> `####`
 * **水平线**：`---`；
 * **引用**：依`>`开头的文本视为引用块；嵌套`>>`饮用中的引用；
 * **粗体**：`**文本加粗**`：**文本加粗**
@@ -92,6 +96,9 @@ menuPre = "<i class='fa-fw fab fa-markdown'></i> "
         * 默认图片参数：`?border=false&lazy=true&&lightbox=true&shadow=false` 可以通过`hugo.toml`设置默认值
     ![Minion](https://octodex.github.com/images/minion.png?height=50px&width=40vw)
 
+* **文本颜色**：（某些可能不支持）
+    * <font color=DeepSkyBlue>蓝色：</font> `<font color=DeepSkyBlue>蓝色</font>`
+    * <font color=OrangeRed>橙色：</font> `<font color=OrangeRed>橙色</font>`
 
 ### 扩展用法
 #### GitHub告警

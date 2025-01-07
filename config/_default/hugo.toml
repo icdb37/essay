@@ -1,11 +1,12 @@
 baseURL = 'http://icdb37.cn/'
-relativeURLs = false
 theme = 'hugo-theme-relearn'
-languageCode = "zh-CN"
-language = "zh"
 defaultContentLanguage = "zh"
 title = "随记"
 author = "Liang"
+summaryLength = 20
+uglyURLs = false
+relativeURLs = false
+
 [mstate]
   mood = ['平常心']
   weather = '晴天'
@@ -77,6 +78,7 @@ author = "Liang"
   [params.author]
     email = 'icdb37@163.com'
     name = 'Liang'
+  customCSS = ["css/fonts.css"]
 
 [module]
   [module.hugoVersion]
@@ -127,14 +129,33 @@ author = "Liang"
 
 # markdown渲染latex语法
 [markup]
+  [markup.highlight]
+    lineNumbersInTable = false
+    renderer.unsafe = true
+
   [markup.goldmark]
-    [markup.goldmark.extensions]
-      [markup.goldmark.extensions.passthrough]
+    duplicateResourceFiles = true
+
+  [markup.goldmark.extensions]
+    strikethrough = false
+
+    [markup.goldmark.extensions.extras]
+      [markup.goldmark.extensions.extras.delete]
+        enable = true
+      [markup.goldmark.extensions.extras.insert]
+        enable = true
+      [markup.goldmark.extensions.extras.mark]
+        enable = true
+      [markup.goldmark.extensions.extras.subscript]
+        enable = true
+      [markup.goldmark.extensions.extras.superscript]
         enable = true
 
-        [markup.goldmark.extensions.passthrough.delimiters]
-          block = [['\[', '\]'], ['$$', '$$']]
-          inline = [['\(', '\)'], ['$', '$']]
+    [markup.goldmark.extensions.passthrough]
+      enable = true
+      [markup.goldmark.extensions.passthrough.delimiters]
+        block = [['\[', '\]'], ['$$', '$$']]
+        inline = [['\(', '\)'], ['$', '$']]
 
 [taxonomies]
   category = 'categories'
@@ -168,3 +189,9 @@ author = "Liang"
     name = '分类'
     pageRef = '/categories'
     weight = 30
+
+  [[languages.zh.menu.shortcuts]]
+    pre = '<i class="fa-regular fa-circle-user"></i> '
+    name = '关于'
+    pageRef = '/me'
+    weight = 40

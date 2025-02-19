@@ -1,6 +1,6 @@
 +++
 date = '2024-12-24T21:09:55+08:00'
-draft = true
+draft = false
 title = '配置'
 weight = 921
 author = 'Liang'

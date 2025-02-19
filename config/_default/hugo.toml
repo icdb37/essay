@@ -16,6 +16,8 @@ relativeURLs = false
   poetryHe = ['']
 
 [params]
+  # 备案
+  beian = "京ICP备2022009758号-2"
   # 编辑用户和日期
   enableGitInfo = true
   # 导航菜单项排序

@@ -1,6 +1,6 @@
 +++
 date = '2024-12-28T19:59:30+08:00'
-draft = true
+draft = false
 title = 'Conda'
 weight = 971
 author = 'Liang'
@@ -21,6 +21,11 @@ Conda是一个跨平台的、多语言（主要python）的二进制包和环境
 [下载](https://www.anaconda.com/download/success)
 [下载](https://docs.conda.io/projects/conda/en/stable/)
 [下载（清华开源镜像）](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/)
+
+```sh
+wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-py312_24.9.2-0-Linux-x86_64.sh
+bash ./Miniconda3-py312_24.9.2-0-Linux-x86_64.sh
+```
 
 
 ### 命令

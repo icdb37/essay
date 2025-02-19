@@ -1,10 +1,10 @@
 +++
-date = '2024-12-28T20:03:36+08:00'
+date = '2025-01-16T23:08:30+08:00'
 draft = false
-title = 'Python'
-weight = 97
+title = '线性代数'
+weight = 91
 author = 'Liang'
-location = '北京'
+location = '北京,昌平'
 tags = [""]
 categories = [""]
 LastModifierDisplayName = 'Liang'

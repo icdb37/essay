@@ -1,8 +1,8 @@
 +++
-date = '2024-12-28T20:03:36+08:00'
-draft = false
-title = 'Python'
-weight = 97
+date = '2025-01-08T09:58:31+08:00'
+draft = true
+title = '感悟'
+weight = 11
 author = 'Liang'
 location = '北京'
 tags = [""]

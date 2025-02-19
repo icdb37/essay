@@ -2,7 +2,7 @@
 date = '2024-12-25T10:24:54+08:00'
 draft = true
 title = '关于'
-weight = 9
+weight = 1
 author = 'Liang'
 location = '北京, 昌平'
 LastModifierDisplayName = 'Liang'

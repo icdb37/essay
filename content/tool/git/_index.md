@@ -1,6 +1,6 @@
 +++
 date = '2024-12-24T21:07:20+08:00'
-draft = true
+draft = false
 title = 'Git'
 weight = 92
 author = 'Liang'

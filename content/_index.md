@@ -1,5 +1,5 @@
 +++
-title = "格微录"
+title = "Liang's Lu"
 type = "home"
 +++
 

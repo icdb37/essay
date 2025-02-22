@@ -65,3 +65,7 @@ weight = 911
 ### 插件
 #### `Front Matter CMS`
 
+### 部署
+* hugo启动服务 `hugo server -D -p 80 --bind 0.0.0.0`
+* python启动服务 `cd public; python -m http.server 80`
+* nodejs启动服务 `http-server -p 80` ，需要安装 `npm install -g http-server`

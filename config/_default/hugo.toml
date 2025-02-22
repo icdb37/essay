@@ -167,7 +167,7 @@ relativeURLs = false
 
 [languages]
   [languages.zh]
-    title = '格微录'
+    title = "Liang's Lu"
     weight = 1
     languageCode = 'zh'
     languageName = '中文'

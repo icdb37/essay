@@ -73,7 +73,7 @@ categories = ["工具"]
 * 自定义配置
     * `layouts/partials/logo.html` 添加一下配置
     ```html
-    <img alt="格微录" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="static/images/logo.png" style="height: auto; width: 30px;">
+    <img alt="Liang's Lu" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="static/images/logo.png" style="height: auto; width: 30px;">
     ```
 #### 菜单宽度
 `layouts/partials/custom-header.html` 
